@@ -1,10 +1,25 @@
 Rails.application.routes.draw do
+ 
   devise_for :users
+  resources :users
+
+  resources :subskillsets
+
+  resources :skillsets
+
+  resources :stages
+
+  resources :subcategories
+
+  resources :categories
+
+  resources :businesses
+   
+  
   get 'pages/index'
-
+  get 'pages/help'
   get 'pages/home'
-
-  resources :ideas
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

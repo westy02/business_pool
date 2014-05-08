@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+  <li>
+  <%= link_to('User Profile', edit_user_path(current_user)) %>        
+  </li>
+<% else %>
+  
+<% end %>
